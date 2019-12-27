@@ -1,0 +1,17 @@
+<!-- <p>login works!</p> -->
+<form class="container bg" (ngSubmit) = "login()" [formGroup]="userLogin">
+    <h2 style="color: slateblue; font-style: italic ;">Login</h2>
+    <div class="form-grp" style="color: yellow;" >
+        <label >UserId</label>
+        <input type="email" class="form-control col-sm-4" formControlName="userId"/>
+    </div>
+    <div class="form-grp" style="color: yellow;">
+        <label >Password</label>
+        <input type="password" class="form-control col-sm-4" formControlName="password"/>
+    </div>
+
+    <div class="col-md-4 text-center">
+        <button style="margin-right: 30px"type="submit" class="btn btn-success">Login</button>
+        <button class="btn btn-danger"><a href="/registration">SignUp</a></button>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+
+<form class="container bg" [formGroup]="register" (ngSubmit)="onSubmit()" >
+    <h1 style="color: royalblue; font-style: oblique ;">SignUp</h1>
+    <div class="form-grp;">
+        <label for="firstName" >FirstName</label>
+        <input class="form-control col-sm-6" id="firstName" formControlName="firstName"/>
+    </div>
+    <div class="form-grp">
+        <label for="lastName">LastName</label>
+        <input class="form-control col-sm-6" id="lastName" formControlName="lastName" />
+    </div>
+    <div class="form-grp">
+        <label for="mobile">MobileNumber</label>
+        <input type="tel" class="form-control col-sm-6" id="mobile" formControlName="mobile" />
+    </div>
+    <div class="form-grp">
+        <label for="email">Email</label>
+        <input type="email" class="form-control col-sm-6" id="email" formControlName="email" />
+    </div>
+    <div class="form-grp">
+        <label for="password">Password</label>
+        <input type="password" class="form-control col-sm-6" id="password" formControlName="password" />
+    </div>
+
+    <div class="col-md-5 text-center">
+        <button style="margin-right: 30px" class="btn btn-primary" >Submit</button>
+        <button class="btn btn-danger">Cancel</button>
+    </div>
+</form>
